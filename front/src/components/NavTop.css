@@ -1,0 +1,40 @@
+nav.top {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px 0 rgba(0, 21, 41, 0.12);
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.top>* {
+    margin-inline-end: 20px;
+}
+
+nav.top>*:last-child {
+    margin-inline-end: 0;
+}
+
+nav.top>.btn {
+    height: 22px;
+}
+
+nav.top>i.btn {
+    height: initial;
+    vertical-align: text-top;
+    font-size: 20px;
+}
+
+nav.top>a, nav.top>.btn, nav.top>button {
+    cursor: not-allowed;
+}
