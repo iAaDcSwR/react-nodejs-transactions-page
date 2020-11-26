@@ -25,6 +25,7 @@ img { vertical-align: middle; }
 }
 
 .btn.blue {
+  border: solid 1px #ffffff;
   background-color: #1890ff;
   color: #ffffff;
   transition: 250ms background-color;

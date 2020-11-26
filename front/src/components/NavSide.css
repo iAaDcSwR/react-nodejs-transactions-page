@@ -7,12 +7,31 @@ nav.side {
   padding: 0 0 552px;
   background-color: rgba(1, 101, 255, 0.85);
   flex-shrink: 0;
+  position: relative;
+  transition: 750ms width;
+}
+
+nav.side.collapsed { width: 40px; }
+
+nav.side.collapsed .link-label,
+nav.side.collapsed>header>img {
+  opacity: 0
+}
+
+nav.side.collapsed>header>img.mini { opacity: 1 }
+nav.side.collapsed>*>a { padding-inline-start: 10px; }
+
+
+.link-label {
+  opacity: 1;
+  transition: 750ms opacity;
 }
 
 nav.side>* {
   flex: 1;
   padding: 0;
   padding-top: 100px;
+  overflow-x: hidden;
 }
 
 nav.side>*>a {
@@ -30,8 +49,9 @@ nav.side>*>a {
   text-align: start;
   text-decoration: none;
   opacity: .65;
-  transition: 250ms opacity;
+  transition: opacity 250ms, padding-inline-start 750ms;
   cursor: not-allowed;
+  white-space: nowrap;
 }
 
 nav.side>*>a:hover {
@@ -59,10 +79,25 @@ nav.side>header {
 }
 
 nav.side>header>img {
-  width: 117px;
   height: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 750ms;
+}
+
+nav.side>header>img.mini { opacity: 0; }
+
+nav.side>.btn.toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: -12px;
+  overflow: visible;
 }
