@@ -18,6 +18,6 @@ No database (sample data is embedded in the server).
  $ npm install
  $ npm start
  ```
- 5. Wait until the message "Would you like to run the app on another port instead? (Y/n)" appears. Then type "Y" and press Enter.
+ 5. Wait until the message `Would you like to run the app on another port instead? (Y/n)` appears. Then type "Y" and press Enter.
  6. The browser should automatically open and show the app. If it doesn't, follow the instructions in the terminal to view the app in the browser.
  7. Enjoy!
