@@ -1,6 +1,6 @@
 # react-nodejs-transactions-page
 ## Description
-A dashboard/list page for money transactions, using [React](https://reactjs.org), [NodeJS](https://nodejs.org).
+A dashboard/list page for money transactions, using [React](https://reactjs.org) v17.0.1 and [Node.js](https://nodejs.org) v14.15.0.
 No database (sample data is embedded in the server).
 
 ## How to run on localhost
